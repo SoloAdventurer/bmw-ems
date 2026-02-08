@@ -1,0 +1,139 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "engineManagement": "Engine Management",
+    "sensors": "Sensors"
+  },
+
+  "home": {
+    "title": "BMW Engine Management System",
+    "subtitle": "An interactive overview of how sensors and the DME control BMW engines",
+    "description": "Based on BMW DME (Digital Motor Electronics) architecture",
+    "cta": "Explore the Engine",
+    "interactive_map": "Interactive Engine Map",
+    "video_title": "B58 Engine Sensors Explained"
+  },
+
+  "about": {
+    "title": "About This Project",
+    "subtitle": "This interactive platform demonstrates how BMW's Digital Motor Electronics (DME) system works with various sensors and actuators to control modern engines.",
+    "educationalPurpose": "Educational Purpose",
+    "educationalText": "This project focuses on the BMW B58 engine, showcasing the relationship between input sensors (MAF, MAP, O2, Coolant) and output actuators (Throttle Body). Each component includes detailed technical information about its function, operation principles, common variations, and healthy operating ranges.",
+    "keyFeatures": "Key Features",
+    "feature1": "Interactive engine diagram with clickable sensor locations",
+    "feature2": "Detailed technical specifications for each sensor",
+    "feature3": "Live data visualization simulation",
+    "feature4": "Dark mode support for comfortable viewing",
+    "feature5": "Bilingual support (English & Egyptian Arabic)"
+  },
+
+  "legend": {
+    "input_sensor": "Input Sensor",
+    "output_sensor": "Output Sensor",
+    "actuator": "Actuator/Output"
+  },
+
+  "sensorCard": {
+    "liveData": "LIVE DATA",
+    "function": "Function",
+    "howItWorks": "How it Works",
+    "healthyRange": "Healthy Range",
+    "commonTypes": "Common Types",
+    "close": "Close"
+  },
+
+  "sensors": {
+    "maf": {
+      "name": "Mass Air Flow (MAF)",
+      "shortName": "MAF",
+      "function": "Measures the mass of air entering the intake to calculate precise fuel injection quantity.",
+      "howItWorks": "A heated film or wire is cooled by incoming air. The DME measures the electrical current required to maintain the wire's temperature, which correlates to air mass.",
+      "healthyRange": "Idle: 3.5 - 4.5 g/s (approx 0.6V - 1.0V) | WOT: Increases linearly with RPM",
+      "variations": [
+        "Hot Wire (Bosch)",
+        "Hot Film (Modern BMWs)",
+        "Vane Meter (Old E30/E36)"
+      ]
+    },
+    "map": {
+      "name": "Manifold Absolute Pressure (MAP)",
+      "shortName": "MAP",
+      "function": "Measures vacuum or positive boost pressure inside the intake manifold to determine engine load.",
+      "howItWorks": "Uses a piezo-resistive crystal that changes electrical resistance based on pressure deflection.",
+      "healthyRange": "Idle (Vacuum): ~0.3-0.5 bar absolute | Boost (N54): Up to 2.5 bar absolute (Voltage: 0.5V to 4.5V)",
+      "variations": [
+        "Standard MAP (Vacuum only)",
+        "T-MAP (Temperature + Pressure, used in Turbo N54/N55)"
+      ]
+    },
+    "o2_pre": {
+      "name": "Pre-Catalytic O2 Sensor",
+      "shortName": "O₂ (Pre)",
+      "function": "Monitors raw exhaust gas to manage engine fueling (Closed Loop).",
+      "howItWorks": "A wideband sensor (LSU) that provides a precise Lambda value to the DME.",
+      "healthyRange": "Lambda 1.0 (approx. 0.45V baseline) | 0.9 (Rich) to 1.1 (Lean)",
+      "variations": ["Wideband (5-wire)", "LSU 4.9"]
+    },
+    "o2_post": {
+      "name": "Post-Catalytic O2 Sensor",
+      "shortName": "O₂ (Post)",
+      "function": "Verifies the efficiency of the catalytic converter.",
+      "howItWorks": "A narrowband sensor that expects to see a steady oxygen level after the catalyst has done its job.",
+      "healthyRange": "Steady 0.6V to 0.7V once the catalyst is at operating temperature.",
+      "variations": ["Narrowband (4-wire)"]
+    },
+    "throttle": {
+      "name": "Electronic Throttle Body",
+      "shortName": "Throttle",
+      "function": "Controls the volume of air entering the engine based on pedal position and DME torque requests.",
+      "howItWorks": "DME sends a PWM signal to a DC motor to open the plate. Dual potentiometers (TPS 1 & 2) verify the position.",
+      "healthyRange": "TPS 1: 0.5V (Closed) -> 4.5V (WOT) | TPS 2: Inverted signal for safety redundancy",
+      "variations": ["Cable Actuated (Older)", "Drive-by-Wire (EDK/MDK)"]
+    },
+    "coolant": {
+      "name": "Coolant Temperature Sensor",
+      "shortName": "Coolant",
+      "function": "Measures engine temperature for cold-start enrichment, fan control, and safety limits.",
+      "howItWorks": "NTC Thermistor (Negative Temperature Coefficient) - Resistance drops as temperature rises.",
+      "healthyRange": "Cold (20°C): ~2500 Ohms | Operating Temp (90°C): ~200-300 Ohms",
+      "variations": [
+        "Single Channel (DME only)",
+        "Dual Channel (DME + Gauge Cluster)"
+      ]
+    }
+  },
+
+  "footer": {
+    "brand": "BMW Engine Management",
+    "tagline": "Interactive Educational Platform",
+    "platform": "Platform",
+    "learn": "Learn",
+    "resources": "Resources",
+    "home": "Home",
+    "about": "About",
+    "engineMap": "Engine Map",
+    "inputSensors": "Input Sensors",
+    "outputActuators": "Output Actuators",
+    "dmeSystem": "DME System",
+    "documentation": "Documentation",
+    "tutorials": "Tutorials",
+    "faq": "FAQ",
+    "copyright": "BMW Engine Management System. Educational purposes only.",
+    "badgeInteractive": "Interactive",
+    "badgeB58": "B58 Engine",
+    "badgeDME": "DME Technology"
+  },
+
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode",
+    "toggle": "Toggle theme"
+  },
+
+  "language": {
+    "english": "EN",
+    "arabic": "عربي",
+    "toggle": "Toggle language"
+  }
+}

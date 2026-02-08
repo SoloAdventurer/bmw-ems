@@ -1,0 +1,9 @@
+.badge-input {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.badge-output {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
